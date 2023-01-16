@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="src/css/main.css" >
+  <title>Home</title>
+</head>
+<body>
+  <div class="top-nav-container">
+    <nav>
+      <div>
+      <div class="open-menu">
+        <span><i class="fa fa-bars"></i></span>
+      </div>
+      <ul>
+        <div class="close-menu">
+          <span><i class="fa fa-times"></i></span>
+        </div>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="photos.html">Gallery</a></li>
+      </ul>
+    </div>
+      <div id="logo">
+        <h1><a href="index.html">YGT</a></h1>
+      </div>
+      <div class="nav-right">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-phone"></i>
+        <i class="fa fa-envelope-o"></i>
+      </div>
+    </nav>
+  </div>
+  <div class="photo-hero">
+    <div class="banner">
+      <form>
+        <h4 class="searchHeading">Search For Photos</h4>
+        <div class="form-group">
+          <input id="search-input" type="text" name="search" /><input id="search-submit" type="submit" value="Search" />
+        </div>
+        <p>cars, bikes, planes, and many more ...</p>
+      </form>
+    </div>
+  </div>
+  <main>
+    <div class="photos-category">
+      <div class="buttons-container">
+        <h2 class="heading">Categories</h2>
+      <div class="category-buttons">
+        <!-- <button class="active">All</button>
+        <button>Birds</button>
+        <button>Flowers</button>
+        <button>Landscape</button>
+        <button>Snow</button>
+        <button>Cars</button> -->
+      </div>
+      </div>
+    </div>
+    <section class="photos-section">
+      <section class="category-photos">
+        <article class="myGallery">
+          <!-- <div class="gallery-card">
+            <img src="./src/images/2.jpg" />
+            <div class="card-details">
+              <h3>Flowers</h3>
+            </div>
+          </div> -->
+        </article>
+        <button class="loadMore">Load More</button>
+      </section>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <div class="close-modal"><i class="fa fa-times"></i></div>
+          <div class="modal">
+            <!-- <img src="./src/images/19.jpg"/> -->
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section class="contact">
+    <article>
+      <div>
+        <p>Address: 6565 Wistful Vista Drive</p>
+        <p>Email: johnkennedy1868@yahoo.com</p>
+        <p>Phone: +1 (515) 876-9754</p>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <h2>Photographer You Can Trust</h2>
+      <div class="footer-bottom">
+        <h3>YGT Photography</h3>
+        <div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-phone"></i>
+          <i class="fa fa-envelope-o"></i>
+        </div>
+      </div>
+    </div>
+    <div class="copy">
+      <small>
+        copyright &copy;<script>document.write(new Date().getFullYear())</script>, yougotthis.com
+      </small>
+    </div>
+  </footer>
+  <!-- scripts -->
+  <script src="./src/jquery/jquery.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script defer src="./src/js/fetchItems.js"></script>
+  <script defer src="./src/js/filterButtons.js"></script>
+  <script defer src="./src/js/ui.js"></script>
+  <script defer src="./src/js/modal.js"></script>
+  <script defer src="./src/js/search.js"></script>
+  <script defer src="./src/js/nav.js"></script>
+  <script defer src="./src/js/app.js"></script>
+</body>
+</html>

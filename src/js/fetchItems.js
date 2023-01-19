@@ -9,7 +9,7 @@ class FetchItems {
 
   getItems = async ()=>{
     try {
-      let response =  await fetch("https://raw.githubusercontent.com/jachero55/jachero55.photography.github.io/main/data/data.json")
+      let response =  await fetch("https://raw.githubusercontent.com/jachero55/jachero55.mytravel.github.io/main/data/data.json")
       let data = await response.json();
       let photos = data.images;
       this.ui.displayPhotos(photos);
